@@ -1,0 +1,42 @@
+.gradient-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(
+        to bottom right,
+        rgba(240, 147, 251, 1),
+        rgba(245, 87, 108, 1)
+    );
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+
+    
+    
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    width: 50%;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+    submit-button {
+        margin-right: 50px;
+      }
+
+      .custom-textfield {
+        width: 100%;
+      }

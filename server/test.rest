@@ -1,0 +1,106 @@
+GET http://google.com
+
+### Upload image
+POST http://localhost:5000/admin/upload
+### Get all ADMINS
+GET http://localhost:5000/admins
+
+### Get one USER by ID
+GET http://localhost:3000/users/6458a64682e2b43b20bf5d3a
+
+### Get one USER by name
+GET http://localhost:5000/admins/
+
+### Post ADMINS
+POST http://localhost:5000/admins
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+### Patch USERS
+PATCH http://localhost:5000/admins/
+Content-Type: application/json
+
+{
+    "name": "Jann Poblador"
+}
+
+### Delete ADMINS
+DELETE http://localhost:5000/admins/64907621dd65c41e1281d2f2
+Content-Type: application/json
+
+### Login USERS
+POST http://localhost:5000/admin/login
+Content-Type: application/json
+
+{
+    "email": "superadmin@gmail.com",
+    "password": "superadmin"
+}
+
+########################################
+########################################
+########################################
+
+### Post USERS
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "first_name": "Maritoni",
+    "last_name": "Amarra",
+    "username": "maritoni",
+    "address": "Amaia Steps",
+    "email": "maritoni@gmail.com",
+    "password": "maritoni"
+}
+
+### Get all USERS
+GET http://localhost:5000/users
+
+### Patch USERS
+PATCH http://localhost:5000/users/649085c7ca22c7b4a2c52210
+Content-Type: application/json
+
+{
+    "first_name": "Ma. Antonia"
+}
+
+### Post PRODUCTS
+POST http://localhost:5000/products/add
+Content-Type: application/json
+
+{
+    "product_name": "Hello",
+    "product_description": "What's up.",
+    "price": 2599.00,
+    "category_id": "213",
+    "quantity": 30,
+    "image": "test.jpg"
+}
+
+### GET Products
+GET http://localhost:5000/products
+
+### Delete Products
+DELETE http://localhost:5000/products/6493dd36519a45313893fe91
+Content-Type: application/json
+
+### Post CATEGORIES
+POST http://localhost:5000/categories
+Content-Type: application/json
+
+{
+    "category_name": "Apparel",
+    "category_description": "Our Badminton Apparel category features a diverse selection of clothing items tailored to enhance your performance on the court while keeping you comfortable and confident. From lightweight and breathable badminton jerseys to sweat-wicking shorts and skirts, we have everything you need to excel in your game. Discover our assortment of technologically advanced fabrics that offer moisture management, allowing you to stay cool and dry during intense rallies. Our apparel is designed with ergonomic cuts and stretchable materials to provide unrestricted movement, giving you the freedom to execute powerful shots and swift footwork.",
+    "image_path": ""
+}
+
+### GET CATEGORIES
+GET http://localhost:5000/categories
+
+### DELETE CATEGORIES
+DELETE http://localhost:5000/categories/64908fba70dd2dc1fbc99351
